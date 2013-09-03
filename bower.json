@@ -1,0 +1,16 @@
+{
+  "name": "rsvp-tools.js",
+  "description": "A set of tools for wrapping asynchronous APIs in RSVP promises",
+  "keywords": [
+    "promise",
+    "futures",
+    "deferred",
+    "rsvp"
+  ],
+  "version": "0.1.0",
+  "scripts": [
+    "main.js",
+    "node_modules/rsvp-tools.js"
+  ],
+  "repo": "mixonic/rsvp-tools.js"
+}

@@ -1,0 +1,37 @@
+{
+  "name": "rsvp-tools",
+  "version": "0.1.0",
+  "description": "A set of tools for wrapping asynchronous APIs in RSVP promises",
+  "main": "dist/commonjs/main.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {
+    "jshint": "~0.9",
+    "grunt": "~0.4.1",
+    "rsvp": "~2.0.2",
+    "grunt-microlib": "git://github.com/thomasboyt/grunt-microlib.git",
+    "grunt-browserify": "~1.0.2",
+    "grunt-s3": "~0.2.0-alpha.2"
+  },
+  "scripts": {
+    "test": "grunt test",
+    "lint": "jshint lib",
+    "prepublish": "grunt build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mixonic/rsvp-tools.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mixonic/rsvp-tools.js/issues"
+  },
+  "keywords": [
+    "promises",
+    "futures",
+    "events",
+    "rsvp"
+  ],
+  "author": "Cory Forsyth and Matthew Beale",
+  "license": "MIT"
+}
