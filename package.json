@@ -7,7 +7,7 @@
     "lib": "lib"
   },
   "devDependencies": {
-    "jshint": "~0.9",
+    "jshint": "~2.0.1",
     "grunt": "~0.4.1",
     "rsvp": "~2.0.2",
     "grunt-microlib": "git://github.com/thomasboyt/grunt-microlib.git",
@@ -16,8 +16,7 @@
   },
   "scripts": {
     "test": "grunt test",
-    "lint": "jshint lib",
-    "prepublish": "grunt build"
+    "lint": "jshint lib"
   },
   "repository": {
     "type": "git",
