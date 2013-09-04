@@ -7,12 +7,10 @@
     "lib": "lib"
   },
   "devDependencies": {
-    "jshint": "~2.0.1",
     "grunt": "~0.4.1",
     "rsvp": "~2.0.2",
-    "grunt-microlib": "git://github.com/thomasboyt/grunt-microlib.git",
-    "grunt-browserify": "~1.0.2",
-    "grunt-s3": "~0.2.0-alpha.2"
+    "grunt-microlib": "git://github.com/bantic/grunt-microlib.git",
+    "grunt-browserify": "~1.0.2"
   },
   "scripts": {
     "test": "grunt test",
