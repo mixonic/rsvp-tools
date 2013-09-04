@@ -9,8 +9,8 @@ test("rsvpTools callback style exists", function(){
   ok(rsvpTools.callback);
 });
 
-test("rsvpTools nativeEvented style exists", function(){
-  ok(rsvpTools.nativeEvented);
+test("rsvpTools evented style exists", function(){
+  ok(rsvpTools.evented);
 });
 
 module("rsvpTools callback style with build");
@@ -123,10 +123,10 @@ var triggerDOMChange = function(){
 
 asyncTest("promise is fulfilled when success event is triggered", function(){
   var thennable,
-      nativeEvented = rsvpTools.nativeEvented,
+      evented = rsvpTools.evented,
       resolveEvent = 'DOMNodeInserted';
 
-  thennable = nativeEvented.contextPassed( 'asyncFunction', resolveEvent);
+  thennable = evented.contextPassed( 'asyncFunction', resolveEvent);
   document.asyncFunction = function(){};
   thennable(document).then( function(){
     ok(true);
@@ -140,7 +140,7 @@ test("additional arguments are passed to the original function", function(){
   var thennable,
       eventable = new Eventable();
 
-  thennable = rsvpTools.nativeEvented.contextPassed( 'asyncWithArguments' );
+  thennable = rsvpTools.evented.contextPassed( 'asyncWithArguments' );
   thennable( eventable, 1,2,3 );
   deepEqual( eventable.passedArguments.slice(0,3), [1,2,3] );
 });
@@ -149,10 +149,10 @@ asyncTest("promise is fulfilled as rejected when failure event fires", function(
   expect(1);
 
   var thennable,
-      nativeEvented = rsvpTools.nativeEvented,
+      evented = rsvpTools.evented,
       rejectEvent = 'DOMNodeInserted';
 
-  thennable = nativeEvented.contextPassed( 'asyncFunction', null, rejectEvent);
+  thennable = evented.contextPassed( 'asyncFunction', null, rejectEvent);
   document.asyncFunction = function(){};
   thennable(document).then( testFailed, function(){
     ok(true);
@@ -166,13 +166,12 @@ asyncTest("promise is fulfilled as rejected when context has no `addEventListene
   expect(1);
 
   var thennable,
-      nativeEvented = rsvpTools.nativeEvented,
+      evented = rsvpTools.evented,
       context = {};
 
-  thennable = nativeEvented.contextPassed( 'noop' );
+  thennable = evented.contextPassed( 'noop' );
   thennable(context).then( testFailed, function(){
     ok(true, "promise should be rejected");
     start();
   });
 });
-
