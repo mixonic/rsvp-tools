@@ -7,7 +7,7 @@
     "deferred",
     "rsvp"
   ],
-  "version": "0.1.0",
+  "version": "0.0.2",
   "scripts": [
     "main.js",
     "node_modules/rsvp-tools.js"
