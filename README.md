@@ -75,4 +75,13 @@ api('/me')
   });
 ```
 
+Wrapping asynchronous APIs
+---
+
+**callback style async, singleton context**
+
+**callback style async, passed context**
+
+**event style async, passed context**
+
 rsvp-tools is available under the MIT license. Cory Forsyth and Matthew Beale 2013
