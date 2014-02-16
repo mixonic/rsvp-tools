@@ -6,6 +6,9 @@
   "directories": {
     "lib": "lib"
   },
+  "dependencies": {
+    "rsvp": "~2.0"
+  },
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-microlib": "git://github.com/bantic/grunt-microlib.git",
