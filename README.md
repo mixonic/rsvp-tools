@@ -84,4 +84,20 @@ Wrapping asynchronous APIs
 
 **event style async, passed context**
 
+Building
+===
+
+```
+npm install
+bower install
+```
+
+And to run tests start the server with:
+
+```
+grunt server
+```
+
+And visit http://localhost:8000/test/
+
 rsvp-tools is available under the MIT license. Cory Forsyth and Matthew Beale 2013
