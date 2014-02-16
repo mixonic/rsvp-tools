@@ -1,13 +1,13 @@
 {
   "name": "rsvp-tools",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "A set of tools for wrapping asynchronous APIs in RSVP promises",
   "main": "dist/commonjs/main.js",
   "directories": {
     "lib": "lib"
   },
   "dependencies": {
-    "rsvp": "~2.0"
+    "rsvp": "~3.0"
   },
   "devDependencies": {
     "grunt": "~0.4.2",

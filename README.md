@@ -138,6 +138,12 @@ npm install
 bower install
 ```
 
+To build:
+
+```
+grunt
+```
+
 And to run tests start the server with:
 
 ```

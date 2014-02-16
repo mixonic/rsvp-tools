@@ -5,12 +5,12 @@ module.exports = function(grunt) {
 
   // Custom phantomjs test task
   this.registerTask('test:phantom', "Runs tests through the command line using PhantomJS", [
-                    'build', 'tests']);
+                    'buildNoVersion', 'tests']);
 
   // Custom Node test task
-  this.registerTask('test:node', ['build', 'tests']);
-
-  this.registerTask('test', ['build', 'tests']);
+  this.registerTask('test', ['buildNoVersion', 'tests', 'connect', 'qunit']);
+  this.registerTask('default', ['buildNoVersion']);
+  this.registerTask('server', ['buildNoVersion', 'tests', 'connect', 'watch:server']);
 
   var config = {
     cfg: {

@@ -1,19 +1,34 @@
 {
   "name": "rsvp-tools.js",
   "description": "A set of tools for wrapping asynchronous APIs in RSVP promises",
+  "authors": [
+    "Cory Forsyth <cory.forsyth@gmail.com>",
+    "Matthew Beale <matt.beale@madhatted.com>"
+  ],
   "keywords": [
     "promise",
     "futures",
     "deferred",
     "rsvp"
   ],
-  "version": "0.0.3",
-  "scripts": [
-    "main.js",
-    "node_modules/rsvp-tools.js"
+  "version": "0.1.0",
+  "license": "MIT",
+  "ignore": [
+    "Gruntfile.js",
+    "node_modules",
+    "bower_components",
+    "test",
+    "options",
+    "lib"
+  ],
+  "main": [
+    "dist/rsvp-tools.js",
+    "dist/rsvp-tools.amd.js",
+    "dist/rsvp-tools.min.js",
+    "dist/commongjs/main.js"
   ],
   "repo": "mixonic/rsvp-tools.js",
   "dependencies": {
-    "rsvp": "~2.0"
+    "rsvp": "~3.0"
   }
 }
