@@ -25,7 +25,7 @@
     "dist/rsvp-tools.js",
     "dist/rsvp-tools.amd.js",
     "dist/rsvp-tools.min.js",
-    "dist/commongjs/main.js"
+    "dist/commonjs/main.js"
   ],
   "repo": "mixonic/rsvp-tools.js",
   "dependencies": {
